@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(shape_dist)
+set(CMAKE_CXX_FLAGS "-O3")
+find_package(VTK REQUIRED)
+add_executable(shape_dist shape_dist.cpp)
+target_link_libraries(shape_dist ${VTK_LIBRARIES})
